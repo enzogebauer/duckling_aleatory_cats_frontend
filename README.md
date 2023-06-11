@@ -2,7 +2,7 @@
 
 <div align="center">
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-	<img height = "250em" src = "https://github.com/enzogebauer/duckling_aleatory_cats" />
+	<img height = "250em" src = "https://github.com/FernandoSchett/duckling-days-backend/assets/80331486/6417c9a8-0a67-4f24-9e3f-8a2df9ca3515" />
     </a>
 </div>
 
