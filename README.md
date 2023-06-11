@@ -22,28 +22,34 @@ Duckling Days is a app that can show you how the space was in the day you choose
 
 In this repository, we did the presentation layer, the frontend off the application and using [API]() as a backend, users can request the picture in days using NASA [API]().
 
-## Resources:
+## Technologies
 
-- See photos of sapce, based on that days inputed.
+- [Vite ⚡](https://vitejs.dev/)
+- [React ⚛️](https://react.dev/)
+- [Tailwind CSS 🎨](https://tailwindcss.com/)
 
-- Make a colection with the days you may like, with description.
+## Requirements
 
-## Dependencies:
+You must install the following requirements to run this project:
 
-The project dependencies are described in a dependencies file within the repository. In summary, heres what you're gonna need in order to run the project:
+- [Node.js ⚙️](https://nodejs.org/pt-br)
+- [Git 📝](https://git-scm.com/)
 
-- 
-- 
-
-For installing dependencies more quickly, you can run the following command at terminal, inside the clonned repository:
-
-    sudo command_for_installing_deppendecies
 
 ## How to run it:
 
-First, clone this repository. After that, open the directory 
+First, clone this repository using git clone. 
 
-## How to install:
+	git clone
+After that, open the directory and select the PrasentationLayer DIR running
+
+	cd PrasentationLayer
+Then, run the command npm i for installing the dependencies
+
+	npm i
+Once you installed all the dependencies it's time to run our project locally. In order to do that run the command:
+
+	npm run dev
 
 ## Screens:
 
@@ -56,16 +62,6 @@ Duckling Days screens were developed to turn out like [figma](https://www.figma.
 </div>
 <h3 align="center">Figure 1 - Screens from Duckling Days</h3>
 
-## UML:
-
-Heres the UML that represents how the application works with their classes.
-
-<div align="center">
-	<a href="https://www.figma.com/file/dtiSuxRlSLNXzV9irm17JA/duckling_GO?type=design&t=UGtwTg0RtKuk1VhJ-1">
-	<img height = "250em" src = "" />
-    </a>
-</div>
-<h3 align="center">Figure 2 - Duckling Days UML.</h3>
 
 ## Development Process:
 
@@ -73,7 +69,7 @@ Developers used [Trello]() to get things organized, each one using their own bra
 
 ## Tools Used:
 
-- React.
+- Trello.
 - Figma.
 
 ## How to contribute:
