@@ -5,7 +5,6 @@ interface Cat {
   id?: number;
   name: string;
   banner_url: string;
-  temperament: string;
 }
 
 
@@ -30,7 +29,6 @@ export function CatsList() {
         >
           <img src={cat.banner_url} alt={cat.name} className="mb-2" />
           <h2 className="text-lg font-bold">{cat.name}</h2>
-          <p>{cat.temperament}</p>
         </div>
       ))}
       <a href="home">  <Form.Button name="Voltar" /></a>
