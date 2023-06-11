@@ -2,7 +2,7 @@
 
 <div align="center">
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-	<img height = "250em" src = "https://github.com/enzogebauer/DucklingSky/assets/80331486/0c4936c1-e6d0-4d3f-9e9f-a6922aafc685" />
+	<img height = "250em" src = "[https://github.com/enzogebauer/DucklingSky/assets/80331486/0c4936c1-e6d0-4d3f-9e9f-a6922aafc685](https://cdn.discordapp.com/attachments/848394422215245885/1117510024340709376/sun-removebg-preview.png)" />
     </a>
 </div>
 
