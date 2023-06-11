@@ -1,4 +1,5 @@
 import { Input } from "./Input";
 import { Label } from "./Label";
 import { ErrorMessage } from "./ErrorMessage";
-export { Input, Label, ErrorMessage};
+import { Button } from "./Button";
+export { Input, Label, ErrorMessage, Button};
