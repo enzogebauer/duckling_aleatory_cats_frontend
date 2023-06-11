@@ -44,8 +44,8 @@ export function LoginForm() {
         <h1 className=" font-sans text-5xl px-3">Login</h1>
       </div>
       <div className="flex flex-row justify-center items-center">
-        <div className="p-10 flex- justify-center items-center mr-24">
-          <img src="https://cdn.discordapp.com/attachments/848394422215245885/1117510024340709376/sun-removebg-preview.png" alt="" className="scale-200"/>
+        <div className="p-10 flex- justify-center items-center mr-24 max-w-[500px] max-h-[500px] ">
+          <img src="https://cdna.artstation.com/p/assets/images/images/055/312/872/original/alexandra-lydsdottir-cattycatcat-animation.gif?1666649487" alt="" className=" rounded-full "/>
         </div>
         <FormProvider {...createForm}>
           <form
