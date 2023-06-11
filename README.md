@@ -2,7 +2,7 @@
 
 <div align="center">
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-	<img height = "250em" src = "https://cdna.artstation.com/p/assets/images/images/055/312/872/original/alexandra-lydsdottir-cattycatcat-animation.gif?1666649487" />
+	<img height = "250em" src = "https://github.com/enzogebauer/duckling_aleatory_cats" />
     </a>
 </div>
 
@@ -18,7 +18,7 @@
 
 ## About:
 
-Duckling Aleatory Cats is a app that can show allow you to collect Aleatory cats, see how the space was in important days for your! You can also save the pictures in a colection, with a local database. 
+Duckling Aleatory Cats is a app that can show allow you to collect Aleatory cats, see how the space was in important days for your! You can also save the pictures in a colection, with a local database, dont forget to check the [backend](https://github.com/FernandoSchett/duckling_aleatory_cats_backend). 
 
 In this repository, we did the presentation layer, the frontend off the application and using [API](https://thecatapi.com/thanks) at our backend, users can request an aleatory cat to add to their catsList.
 
@@ -71,6 +71,7 @@ Developers used [Trello]() to get things organized, each one using their own bra
 
 - Trello.
 - Figma.
+- VS CODE.
 
 ## How to contribute:
 
@@ -78,6 +79,3 @@ Feel free to create a new branch, fork the project or contact one of us to devel
 
 ## Licence:
 [Apache V2](https://choosealicense.com/licenses/apache-2.0/)
-
-## References:
-
