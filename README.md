@@ -2,7 +2,7 @@
 
 <div align="center">
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-	<img height = "250em" src = "https://cdn.discordapp.com/attachments/848394422215245885/1117510024340709376/sun-removebg-preview.png" />
+	<img height = "250em" src = "https://cdna.artstation.com/p/assets/images/images/055/312/872/original/alexandra-lydsdottir-cattycatcat-animation.gif?1666649487" />
     </a>
 </div>
 
