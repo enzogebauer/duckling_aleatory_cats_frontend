@@ -40,7 +40,7 @@ You must install the following requirements to run this project:
 
 First, clone this repository using git clone. 
 
-	git clone
+	git clone https://github.com/enzogebauer/duckling_aleatory_cats.git
 After that, open the directory and select the PrasentationLayer DIR running
 
 	cd PrasentationLayer
