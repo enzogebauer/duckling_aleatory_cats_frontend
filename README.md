@@ -1,4 +1,4 @@
-<h1 align="center">⭐ Duckling Days FrontEnd ⭐</h1>
+<h1 align="center">⭐ Duckling Aleatory Cats FrontEnd ⭐</h1>
 
 <div align="center">
 	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
