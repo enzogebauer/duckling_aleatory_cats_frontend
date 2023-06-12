@@ -9,7 +9,6 @@ import { CatCard } from "./CatCard";
 export function CatsList() {
   const [cats, setCats] = useState<Cat[]>([]);
   useEffect(() => {
-    
     axios.get("/api/cats").then((response) => {
       setCats(response.data);
     });
