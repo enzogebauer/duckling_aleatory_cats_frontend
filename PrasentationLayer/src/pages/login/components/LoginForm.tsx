@@ -4,12 +4,14 @@ import { z } from "zod"
 import { useForm, FormProvider } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import axios from "axios"
+import { useState } from "react"
+
 const sendFormSchema = z.object({
   email: z
     .string()
     .nonempty({ message: "O e-mail é obrigatório" })
     .email({ message: "Formato de e-mail inválido" }),
-  senha: z
+  password: z
     .string()
     .nonempty({ message: "A mensagem não pode ser vazia" }),
 
@@ -17,6 +19,7 @@ const sendFormSchema = z.object({
 
 type formData = z.infer<typeof sendFormSchema>
 export function LoginForm() {
+  const [loginError, setLoginError] = useState("");
   const createForm = useForm<formData>({
     resolver: zodResolver(sendFormSchema),
   })
@@ -32,10 +35,21 @@ export function LoginForm() {
     }
 
     try {
-      const response = await axios.post(import.meta.env.VITE_MAIL_SEND, apiData)
+      const response = await axios.post(
+        "https://localhost:7057/User/CheckLogin", // Altere a URL da rota de login
+        apiData
+      );
       console.log(response.data)
+      // Verifique a resposta do servidor e tome a ação apropriada
+      if (response.data == true) {
+        // Login bem-sucedido, redirecione para a página principal, por exemplo
+        window.location.href = "/home";
+      } else {
+        // Login falhou, exiba uma mensagem de erro
+        setLoginError(response.data.message);
+      }
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
   }
   return (
@@ -59,18 +73,20 @@ export function LoginForm() {
               name="email"
             />
             <Form.ErrorMessage field="email" />
-            <Form.Label htmlFor="name" className="text-white px-5">Senha</Form.Label>
+            <Form.Label htmlFor="password" className="text-white px-5">Senha</Form.Label>
             <Form.Input
               placeholder="Digite sua senha"
               type="password"
-              name="senha"
+              name="password"
             />
-            <Form.ErrorMessage field="senha" />
+            <Form.ErrorMessage field="password" />
             <span className="font-semibold"> Não possui cadastro ? <mark className="text-blue-500 font-semibold bg-transparent cursor-pointer underline font-sans"> <a href="/register" >cadastre-se</a></mark></span>
 
             <Form.Button name="Login"
               disabled={isSubmitting}
             ></Form.Button>
+            
+            {loginError && <p>{loginError}</p>}
           </form>
         </FormProvider>
 

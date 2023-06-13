@@ -4,15 +4,16 @@ import { useForm, FormProvider } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import axios from "axios"
 import * as Form from "../../components/index"
+import { useState } from "react"
 const sendFormSchema = z.object({
-  nome: z
+  username: z
     .string()
     .nonempty({ message: "O nome é obrigatório" }),
   email: z
     .string()
     .nonempty({ message: "O e-mail é obrigatório" })
     .email({ message: "Formato de e-mail inválido" }),
-  senha: z
+  password: z
     .string()
     .nonempty({ message: "A mensagem não pode ser vazia" }),
 
@@ -20,6 +21,7 @@ const sendFormSchema = z.object({
 
 type formData = z.infer<typeof sendFormSchema>
 export function RegisterForm() {
+  const [loginError, setLoginError] = useState("");
   const createForm = useForm<formData>({
     resolver: zodResolver(sendFormSchema),
   })
@@ -30,13 +32,20 @@ export function RegisterForm() {
   } = createForm
 
   async function sendForm(data: formData) {
+    
     const apiData = {
       ...data,
     }
 
     try {
-      const response = await axios.post(import.meta.env.VITE_MAIL_SEND, apiData)
+      const response = await axios.post("https://localhost:7057/User/PostUser", apiData)
       console.log(response.data)
+      if (response.data == true) {
+        window.location.href = "/";
+      } else {
+        // Login falhou, exiba uma mensagem de erro
+        setLoginError(response.data.message);
+      }
     } catch (error) {
       console.error(error)
     }
@@ -52,13 +61,13 @@ export function RegisterForm() {
             onSubmit={handleSubmit(sendForm)}
             className="flex flex-col gap-5 sm:max-w-md lg:max-w-none "
           >
-            <Form.Label htmlFor="nome" className="text-white px-5">Nome</Form.Label>
+            <Form.Label htmlFor="username" className="text-white px-5">Nome</Form.Label>
             <Form.Input
               placeholder="Digite seu nome"
-              type="nome"
-              name="nome"
+              type="text"
+              name="username"
             />
-            <Form.ErrorMessage field="nome" />
+            <Form.ErrorMessage field="username" />
             <Form.Label htmlFor="email" className="text-white px-5">E-mail</Form.Label>
             <Form.Input
               placeholder="nome@exemplo.com"
@@ -70,15 +79,16 @@ export function RegisterForm() {
             <Form.Input
               placeholder="Digite sua senha"
               type="password"
-              name="senha"
+              name="password"
             />
-            <Form.ErrorMessage field="senha" />
+            <Form.ErrorMessage field="password" />
             <Form.Button
               name="Cadastre-se"
               disabled={isSubmitting}
             >
               Cadatrar
             </Form.Button>
+            {loginError && <p>{loginError}</p>}
           </form>
         </FormProvider>
         <div className="p-10 flex- justify-center items-center ml-24 max-w-[500px] max-h-[500px]">
