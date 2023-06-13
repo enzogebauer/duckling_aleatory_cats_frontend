@@ -10,7 +10,7 @@ export function Home() {
           <h1 className="mt-4">Duckling Aleatory Cats</h1>
         </header>
         {/* botarimagem do gato vindo do back */}
-        <GetCat img="" />
+        <GetCat />
       </section>
     </>
 
