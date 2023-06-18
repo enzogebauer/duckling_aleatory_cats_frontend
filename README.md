@@ -51,16 +51,6 @@ Once you installed all the dependencies it's time to run our project locally. In
 
 	npm run dev
 
-## Screens:
-
-Duckling Aleatory Cats screens were developed to turn out like [figma](https://www.figma.com/file/U2wvozTpInpeldVyqGv7D3/duckling_days?type=design&node-id=0%3A1&t=6OffzpF4MdiSHkeQ-1).
-
-<div align="center">
-	<a href="https://www.figma.com/file/dtiSuxRlSLNXzV9irm17JA/duckling_GO?type=design&t=UGtwTg0RtKuk1VhJ-1">
-	<img height = "250em" src = "" />
-    </a>
-</div>
-<h3 align="center">Figure 1 - Screens from Duckling Aleatory Cats</h3>
 
 
 ## Development Process:
