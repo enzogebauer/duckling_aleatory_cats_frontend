@@ -6,26 +6,27 @@
     </a>
 </div>
 
-## Developed by:
+## Developed by 💻:
+
 - [Fernando Schettini](https://github.com/FernandoSchett)
 - [Antonio Horácio Magalhães](https://github.com/AntonioHoracio77)
 - [Orlando Mota Pires](https://github.com/orlandomotapires)
 - [Enzo Gebauer](https://github.com/enzogebauer)
 
-## Special thanks to:
+## Special thanks to 🥰:
 
 - [Edson Mota](https://github.com/edsonmottac) - Our supervising professor, your experience and knowledge have been invaluable to our progress.
 
-## About:
+## About 🤔:
 
 Duckling Aleatory Cats is a app that can show allow you to collect Aleatory cats, see how the space was in important days for your! You can also save the pictures in a colection, with a local database, dont forget to check the [backend](https://github.com/FernandoSchett/duckling_aleatory_cats_backend). 
 
 In this repository, we did the presentation layer, the frontend off the application and using [API](https://thecatapi.com/thanks) at our backend, users can request an aleatory cat to add to their catsList.
 
-## Technologies
+## Dependencies
 
-- [Vite ⚡](https://vitejs.dev/)
-- [React ⚛️](https://react.dev/)
+- ```Vite```⚡.
+- [```React``` ⚛️](https://react.dev/)
 - [Tailwind CSS 🎨](https://tailwindcss.com/)
 
 ## Requirements
