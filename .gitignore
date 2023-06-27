@@ -1,0 +1,24 @@
+# Directories
+node_modules/         # Ignore the "node_modules" directory
+dist/                 # Ignore the "dist" directory
+.cache/               # Ignore the ".cache" directory
+
+# Files
+.DS_Store             # Ignore macOS system file
+.env                  # Ignore environment configuration file
+
+# Vite-specific dependencies
+vite.config.ts        # Ignore the Vite configuration file
+
+# React-specific dependencies
+react-app-env.d.ts    # Ignore React environment declarations
+**/*.test.{js,ts,jsx,tsx}   # Ignore test files
+**/__tests__/         # Ignore test directories
+
+# Tailwind CSS-specific dependencies
+.tailwind/            # Ignore the Tailwind CSS directory
+postcss.config.js     # Ignore the PostCSS configuration file
+
+# Others
+yarn-error.log        # Ignore Yarn error log file
+yarn.lock             # Ignore Yarn lock file
